@@ -1,0 +1,397 @@
+/* 
+-------------------------------------------
+  Author: Seyon Rajagopal
+  Copyright (c) 2020 Seyon Rajagopal
+------------------------------------------- 
+*/
+html {
+    background-color: #24252a;
+}
+
+body {
+    width: 100%;
+    margin: 2px;
+    color: white;
+    text-decoration: none;
+}
+/* Profile Styling*/
+
+.profile-container {
+  display: flex;
+  align-items: center;
+}
+
+.left-section {
+  width: 30%;
+  height: 35vh; 
+  margin: 20px;
+}
+
+.profile-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 90%;
+}
+
+
+.url-text{
+    margin: auto;
+    display: flex;
+    padding: 10px;
+    text-align: bottom;
+}
+
+.profile-url {
+  display: flex;
+  text-decoration: none;
+  color: #877eff; 
+  font-weight: bold;
+  text-align: top;
+}
+.profile-picture {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: contain; 
+}
+
+.profile-info {
+  height: 40vh;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+}
+
+.profile-info h1 {
+  margin-bottom: 10px;
+  margin-left: 10px;
+  font-size: 40px;
+}
+
+.location{
+  display: flex;
+  text-align: top;
+}
+.profile-info p {
+  margin-bottom: 10px;
+}
+
+.extra{
+  height: 180px;
+}
+
+.follow{
+  margin-top: 40px;
+}
+
+.follow span{
+  padding-right: 50px;
+}
+
+
+
+/* Intial username input box*/
+#title {
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    padding: 30px;
+    border-radius: 20px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #3C3F58;
+    text-decoration: none;
+}
+
+
+#title h1 {
+    color: white;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+#title i {
+    color: #877eff;
+}
+
+#user {
+    width: 200px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    margin-bottom: 30px;
+    background: rgba(36, 37, 42, 0.397);
+    color: #fff;
+}
+
+#btn {
+    width: 100px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    margin-bottom: 10px;
+    background: #877eff;;
+    color: white;
+    cursor: pointer;
+}
+
+
+/*Error Windon*/
+#back {
+    text-align: center;
+    margin: 30px;
+}
+
+#back a {
+    width: 100px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    margin-bottom: 10px;
+    background: #877eff;
+    color: white;
+    cursor: pointer;
+}
+.error-box {
+    border-radius: 10px;
+    padding: 30px;
+    background-color: #2e3047;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.error-msg {
+    font-size: 30px;
+    color: #877eff;
+    vertical-align: middle;
+}
+
+
+/*Repository divs*/
+#repo-box {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+}
+
+.repo-item {
+    border-radius: 10px;
+    padding: 30px;
+    margin: 10px;
+    background-color: #2e3047; 
+    overflow: auto;
+    overflow-wrap: break-word;
+    text-decoration: none;
+    min-height: 100px;
+}
+
+.description {
+    color: white;
+    margin-bottom: 10px;
+}
+.repo-name {
+    font-size: 40px;
+    color: #877eff;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+
+
+.bottom {
+    position:relative;
+    display: flex;
+}
+
+.language, .star, .fork {
+    max-width: 100px;
+    display:inline-block;
+    margin-right: 20px;
+    color: #877eff;
+}
+
+.repo-item:hover{
+    text-decoration: none;
+    background-color: #877eff;
+    transition: ease-in-out 0.2s;
+    color: white;
+}
+.repo-item:hover > div {
+    color: white;
+    transition: ease-in-out 0.2s;
+    text-decoration: none;
+}
+
+.repo-item:hover > div > div{
+    color: white;
+    transition: ease-in-out 0.2s;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+/* View select options style */
+.view {
+  width: 100%;
+  height: 30px;
+  padding: 10px;
+  padding-left: 30px;
+  position: relative;
+}
+
+.back {
+    width: 100px;
+    height: 100%;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    color: #877eff;
+    text-align: left;
+  }
+
+  .control {
+    width: 100%;
+    height: 10%;
+    justify-content: center;
+  }
+
+  
+
+  .custom-dropdown {
+    display: inline-block;
+    height: 30px;
+    width: 50px;
+    background-color: #2e3047;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#viewDropdown {
+    appearance: none;
+    
+    border-radius: 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #2e3047;
+    color: #877eff;
+    border: none;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.custom-dropdown #viewDropdown:focus {
+    display: block;
+}
+
+#viewDropdown:hover {
+    background-color: #877eff;
+    color: white;
+}
+#viewDropdown:hover option {
+  background-color: #2e3047;
+  color: #877eff;
+}
+
+#viewDropdown option:hover {
+  background-color: #877eff;
+  color: white;
+}
+
+
+
+/* Footer Style */
+.pagination {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.page-number, .nav-btn {
+  margin-left: 30px;
+  position: relative;
+  cursor: pointer;
+  height: 80%;
+  background-color: #2e3047;
+  color: #877eff;
+  width: 50px;
+  text-align: center;
+  padding-top:10px;
+  border-radius: 10px;
+}
+.page-number:hover, .nav-btn:hover{
+  background-color: #877eff;
+  color: white;
+}
+.disabled, .disabled:hover {
+  color: gray;
+  cursor: not-allowed;
+  background-color: #2e3047;
+}
+
+#footer {
+  height: 40px;
+  margin: 30px;
+}
+
+
+/* Responsive for smaller devices */
+@media only screen and (max-width: 700px){
+  .extra {
+      height: 0px;
+  }
+  .profile-container {
+    flex-direction: column;
+    align-items: center; /* Switch to a single column layout */
+  }
+
+  .left-section {
+    width: 100%;
+  }
+
+  .profile-link {
+      width: 250px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+  }
+
+  .profile-picture {
+    width: 100%; /* Make the profile picture take full width */
+    object-fit: contain;
+      /* Auto height to maintain aspect ratio */
+  
+  }
+
+  .profile-info{
+      width: auto;
+      height: auto;
+      padding-top: 0;
+      margin-left: 20px;
+      padding-left: 20px;
+  }
+
+  #repo-box {
+      display: grid;
+      grid-template-columns: 1fr;
+  }
+}
+
+a{
+  text-decoration: none;
+}

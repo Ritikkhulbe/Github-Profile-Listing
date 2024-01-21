@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="styles.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="script.js"></script>
+        <title>Repository List </title>
+    </head>
+
+    <body>
+        
+
+        <div id="title">
+            <h1>Enter GitHub Username:</h1>
+            <input id="user" type="text" placeholder="Username">
+            <button id="btn" onclick="getusername()">View Repos</button>
+            <br>
+        </div>
+
+        <!-- The div can be seen after searching a username-->
+        <div id="mainArea">
+            <div id="user-box"></div>
+            <div id="view-box"></div>
+            <div id="repo-box"></div>
+            <div id="footer"></div>
+        </div>
+
+        <script>
+                document.getElementById("mainArea").style.display = "none";
+                function getusername() {
+                    var user = document.getElementById("user").value;
+                    document.getElementById("title").style.display = "none";
+                    document.getElementById("mainArea").style.display = "block";
+                    getUserDetails(user);
+                }
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1jquery.min.js"></script>
+
+    </body>
+
+</html>
