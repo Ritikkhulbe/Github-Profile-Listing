@@ -69,7 +69,7 @@ function genRepo(user) {
                 </div>`);
             }
             else {
-
+                console.log(request);
                 //initializing variables
                 let currentPage = 1;
                 let view = 10;
